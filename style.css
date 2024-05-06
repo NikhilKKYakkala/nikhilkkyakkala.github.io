@@ -33,10 +33,9 @@ nav{
 }
 
 .logo{
-    color: #fff;
-    font-weight:bold;
-    font-size:10px;
-    font-family: 'Averia Sans Libre';
+    width: 100%;
+    height: auto;
+    max-width: 300px;
 }
 
 .inside{
