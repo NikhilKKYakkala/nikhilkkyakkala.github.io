@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pooja Minna | Portfolio</title>
+    <title>Nikhil Yakkala | Portfolio</title>
     <link rel ="stylesheet" href="style3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Averia Sans Libre' rel='stylesheet'>
@@ -24,12 +23,10 @@
                     <i class="fas fa-times" onclick = "closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick = "openmenu()"></i>
-                
             </nav>
             <div class="header-text">
-                
-                <h1>Hi, I'm <span>Pooja Minna</span> </h1>
-                <p> Software Developer | CS Major @ UTD </p>
+                <h1>Hi, I'm <span>Nikhil Yakkala</span> </h1>
+                <p> Master's in CS @ DePaul </p>
             </div>
         </div>
     </div>
@@ -66,18 +63,14 @@
                                 Building highly available, fault tolerant and scalable solutions.<br>
                                 Tools: Hadoop, PySpark <br>
                             </li>
-                            
                         </ul>
                     </div>
-
-
                     <div class="tab-contents" id="education">
                         <ul>
                             <li>
                             <span>Masters in Computer Science - 3.77/4</span><br>
                             University: University of Texas at Dallas <br>
                             Graduation: May 2024 <br>
-
                             </li>
                             <li>
                             <span>Bachelors in Electronics and Communication - 3.77/4</span><br>
@@ -113,7 +106,6 @@
                         <li>Achieved 15% in speed of several backend functionalities.</li>
                         <li>Increased user engagement by 50% by implementing intuitive design.</li>
                     </ul>
-                   
                 </div>
             </div>
             <div class="exp-work">
@@ -143,10 +135,8 @@
             <p class="tab-heading "  onclick="openprojs('ml')">Machine Learning</p>
             <p class="tab-heading "  onclick="openprojs('bd')">Big Data</p>
             <p class="tab-heading "  onclick="openprojs('os')">Operating System</p>
-    
         </div>
         <div class="tab-infos" id="os">
-    
         <div class="work-list">
             <div class="work">
                 <img src="images/forport-2.png" >
@@ -159,7 +149,6 @@
                 <div class="layer">
                     <h3>Baby Unix shell</h3>
                     <p>Developed a program to replicate basic functionalities of a Unix shell.</p>
-    
                     <a href="https://github.com/poojaminna/baby-unix-shell.git"><i class="fab fa-github" ></i>  </a>
                 </div>
             </div>
@@ -183,10 +172,8 @@
             </div>
         </div>
         </div>
-
         <div class="tab-infos active-info" id="wd">
         <div class="work-list"> 
-
             <div class="work">
                 <img src="images/forport-2.png" >
                 <div class="pro-name">
@@ -222,10 +209,6 @@
                     <a href="https://github.com/poojaminna/booking-website"><i class="fab fa-github" ></i>  </a>
                 </div>
             </div>
-
-
-
-
             <div class="work">
                 <img src="images/forport-2.png" >
                 <div class="pro-name">
@@ -258,7 +241,6 @@
                     <a href="https://poojaminna.github.io/keyboard/"><i class="fas fa-play"></i>  </a>
                 </div>
             </div>
-
             <div class="work">
                 <img src="images/forport-2.png" >
                 <div class="pro-name">
@@ -307,13 +289,10 @@
                     <a href="https://poojaminna.github.io/golden-ratio/"><i class="fas fa-play"></i>  </a>
                 </div>
             </div>
-            
-            
         </div>    
         </div>
         <div class="tab-infos" id="bd">
         <div class="work-list">
-
             <div class="work">
                 <img src="images/forport-2.png" >
                 <div class="pro-name">
@@ -426,12 +405,8 @@
                     </a>
                 </div>
             </div>
-
-
             </div>
         </div>
-
-        
     </div>
 </div>
 
@@ -470,7 +445,6 @@
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-
         function opentab(tabname){
             for(tablink of tablinks){
                 tablink.classList.remove("active-link")
@@ -481,11 +455,8 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-
-
         var tabheading = document.getElementsByClassName("tab-heading");
         var tabinfos = document.getElementsByClassName("tab-infos");
-
         function openprojs(tabproj){
             for(projectwindow of tabheading){
                 projectwindow.classList.remove("active-heading")
@@ -497,14 +468,11 @@
             document.getElementById(tabproj).classList.add("active-info");
         }
     </script>
-
     <script>
         var sidemenu = document.getElementById("sidemenu");
-
         function openmenu(){
             sidemenu.style.right = "0";
         }
-
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
