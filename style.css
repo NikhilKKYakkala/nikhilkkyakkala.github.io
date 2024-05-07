@@ -22,7 +22,7 @@ body{
 }
 
 .container{
-    padding: 10px 10%;
+    padding: 10px 15%;
 }
 
 nav{
@@ -495,7 +495,7 @@ nav .fas{
     }
 
     .header-text{
-        margin-top: 55%;
+        margin-top: 35%;
         font-size: 16px;
     }
 
