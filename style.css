@@ -35,7 +35,7 @@ nav{
 .logo{
     width: 100%;
     height: auto;
-    max-width: 300px;
+    max-width: 100px;
 }
 
 .inside{
@@ -92,7 +92,7 @@ nav ul li a:hover::after{
 /* -------------------ABOUT------------------------  */
 
 #about{
-    padding: 80px 0;
+    padding: 50px 0;
     color: #ababab;
 }
 
