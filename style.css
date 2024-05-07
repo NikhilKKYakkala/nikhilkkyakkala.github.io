@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding:0;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
 
@@ -38,11 +38,11 @@ nav{
     max-width: 100px;
 }
 
-.inside{
+/* .inside{
     color: #ff004f;
     font-size:50px;
     font-family: 'Averia Sans Libre';
-}
+} */
 
 nav ul li{
     display: inline-block;
@@ -172,7 +172,7 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
     color: #2F84D4;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .tab-contents{
@@ -385,7 +385,7 @@ nav ul li a:hover::after{
 .contact-left p i{
     color: #2F84D4;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .social-icons{
