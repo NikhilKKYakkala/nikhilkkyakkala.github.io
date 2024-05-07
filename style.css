@@ -178,7 +178,7 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-/* ------------work experience----- */
+/* ------------Work Experience----- */
 
 .exp-work-list{
     display: flex;
@@ -210,9 +210,9 @@ nav ul li a:hover::after{
     color:#2F84D4;
     font-size:18px;
 }
-/* -------------portfolio------- */
+/* -------------Projects------- */
 
-#portfolio{
+#projects{
     padding: 50px 0;
 }
 
@@ -426,7 +426,7 @@ nav ul li a:hover::after{
 }
 
 
-.contact-right form{
+/* .contact-right form{
     width:100%;
 
 }
@@ -448,7 +448,7 @@ form .btn2{
     margin-top:20px;
     cursor: pointer;
     font-size: 18px;
-}
+} */
 
 .copyright{
     width:100%;
@@ -491,7 +491,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/nikita-kachanovsky-OVbeSXRk_9E-unsplash\ \(1\).jpg);
+        background-image: url(images/bg.jpg);
     }
 
     .header-text{
