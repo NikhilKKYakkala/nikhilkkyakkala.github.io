@@ -62,7 +62,7 @@ nav ul li a::after{
     content : '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #2F84D4;
     position: absolute;
     left:0;
     bottom: -6px;
@@ -85,7 +85,7 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f;
+    color: #2F84D4;
 }
 
 
@@ -110,7 +110,7 @@ nav ul li a:hover::after{
     /* border : 5px solid #ff004f; */
     box-shadow:
     0 0 0 10px black, 
-    0 0 0 15px #ff004f;
+    0 0 0 15px #2F84D4;
     overflow: hidden; 
 }
 
@@ -153,7 +153,7 @@ nav ul li a:hover::after{
     position: absolute;
     left:0;
     bottom: -8px;
-    background: #ff004f;
+    background: #2F84D4;
     transition: 0.5s;
 }
 
@@ -339,7 +339,7 @@ nav ul li a:hover::after{
     position: absolute;
     left:0;
     bottom: -8px;
-    background: #ff004f;
+    background: #2F84D4;
     transition: 0.5s;
 }
 
@@ -380,7 +380,7 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #ff004f;
+    color: #2F84D4;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -399,20 +399,20 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color : #ff004f;
+    color : #2F84D4;
     transform: translateY(-5px);
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #2F84D4;
 }
 
 .btn{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #2F84D4;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -422,7 +422,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
-    background: #ff004f;
+    background: #2F84D4;
 }
 
 
@@ -509,7 +509,7 @@ nav .fas{
     }
 
     nav ul{
-        background: #ff004f;
+        background: #2F84D4;
         position: fixed;
         top: 0;
         right: -200px;
