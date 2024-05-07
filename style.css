@@ -100,7 +100,7 @@ nav ul li a:hover::after{
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10%;
+    padding: 5%;
 }
 
 .about-col-1{
@@ -187,7 +187,7 @@ nav ul li a:hover::after{
     flex-direction:column;
     color: #ababab;
     font-size: 17px;
-
+    padding: 5%;
 }
 .exp-work{
     width: 95%;
