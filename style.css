@@ -117,7 +117,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
-    width: 60%;
+    width: 40%;
     height: 60%;
     object-fit: cover;
     /* padding: 5%; */
