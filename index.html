@@ -4,6 +4,23 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description" content="Portfolio of Nikhil Yakkala - Software Developer, Cloud Architect, and Wildlife Photographer." />
+    <meta name="author" content="Nikhil Yakkala">
+    <meta name="keywords" content="Nikhil Yakkala, Software Developer, AWS, Cloud, Java, Portfolio, Wildlife Photography">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nikhilkkyakkala.github.io/" />
+    <meta property="og:title" content="Nikhil Yakkala | Portfolio" />
+    <meta property="og:description" content="Software Developer | Cloud Architect | Wildlife Photographer" />
+    <meta property="og:image" content="images/nikhil2.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nikhil Yakkala | Portfolio" />
+    <meta name="twitter:description" content="Software Developer | Cloud Architect | Wildlife Photographer" />
+    <meta name="twitter:image" content="images/nikhil2.jpg" />
+    
     <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico"/>
     <title>Nikhil Yakkala | Portfolio</title>
     <link href="style.css" rel="stylesheet"/>
@@ -20,6 +37,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a class="resume-nav-btn" href="docs/Nikhil_Resume.pdf" download>📄 Resume</a></li>
             </ul>
         </nav>
         <div class="header-text fade-in">
@@ -137,23 +155,70 @@
     <section class="contact-section container fade-in" id="contact">
         <h2>Contact Me</h2>
         <div class="contact-box">
-            <div class="contact-details">
-                <p><i class="fas fa-envelope"></i> yakkalanikhil99@gmail.com</p>
-                <p><i class="fas fa-phone"></i> +1 (469) 573-1965</p>
-                <a href="https://linkedin.com/in/nikhil-komal-kumar" target="_blank"><i class="fab fa-linkedin large-icon"></i></a>
-                <a href="https://github.com/NikhilKKYakkala" target="_blank"><i class="fab fa-github large-icon"></i></a>
+            <div class="contact-left">
+                <h3>Get in touch</h3>
+                <div class="contact-line">
+                    <i class="fas fa-envelope"></i> yakkalanikhil99@gmail.com
+                </div>
+                <div class="contact-line">
+                    <i class="fas fa-phone"></i> (469) 573-1965
+                </div>
+                <div class="contact-line">
+                    <a href="https://linkedin.com/in/nikhil-komal-kumar" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+                <div class="contact-line">
+                    <a href="https://github.com/NikhilKKYakkala" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
             </div>
-            <form class="contact-form" action="https://formspree.io/f/your-email-id" method="POST">
-                <input name="name" placeholder="Your Name" required="" type="text" />
-                <input name="email" placeholder="Your Email" required="" type="email" />
-                <textarea name="message" placeholder="Your Message" required="" rows="5"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <a href="docs/Nikhil_Resume.pdf" download class="btn btn2">Resume</a>
-        </div>
+            <div class="contact-right">
+                <form class="contact-form" action="https://formspree.io/f/xgvajbyz" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+                    <input type="hidden" name="_subject" value="Portfolio Contact Message" />
+                    <input type="hidden" name="_redirect" value="https://yourdomain.com/#contact-success" />
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="form-success" style="display: none; color: #b8cadb; margin-top: 10px;">
+                    ✅ Thank you! Your message has been sent.
+                </div>                  
+            </div>
+        </div>   
     </section>
-    <div class="copyright">
-        <p>&copy Nikhil Yakkala.</p>
-    </div>
+    <footer class="footer">
+        <div class="container">
+          <p>© 2024 Nikhil Yakkala. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.querySelector('.contact-form');
+        const success = document.querySelector('.form-success');
+      
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+      
+          fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: {
+              'Accept': 'application/json'
+            }
+          }).then(() => {
+            form.reset();
+            success.style.display = 'block';
+          }).catch(() => {
+            success.textContent = 'Oops! Something went wrong.';
+            success.style.color = 'tomato';
+            success.style.display = 'block';
+          });
+        });
+      </script>
+      
 </body>
 </html>
