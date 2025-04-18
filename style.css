@@ -104,23 +104,19 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis:30%;
-    /* width: 350px; */
-    height: auto;
-    border-radius:20%;
-    /* border : 5px solid #ff004f; */
-    box-shadow: 0 0 0 10px black, 0 0 0 15px #2F84D4;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
     overflow: hidden;
-    /* padding: 5%; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px #2F84D4;
+    margin: auto;
 }
 
 .about-col-1 img{
     width: 100%;
     height: auto;
+    object-fit: cover;
     display: block;
-    object-fit: contain;
-    box-sizing: border-box;
-    /* padding: 5%; */
 }
 
 .about-col-2{
