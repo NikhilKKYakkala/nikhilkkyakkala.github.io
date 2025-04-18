@@ -119,6 +119,11 @@ nav ul li a:hover::after{
     display: block;
 }
 
+.about-col-1 img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+}
+
 .about-col-2{
     flex-basis: 60%;
     /* padding: 5%; */
