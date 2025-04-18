@@ -1,364 +1,117 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Nikhil Yakkala | Portfolio</title>
-    <link rel ="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- <link href='https://fonts.googleapis.com/css?family=Averia Sans Libre' rel='stylesheet'> -->
+    <link href="style.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <div id="header">
+    <div class="gradient-bg" id="header">
         <div class="container">
-            <nav>
-                <img src="images/log1.png" class="logo">
-                <!-- <span class="logo"><span class="inside">P</span>ortfolio.</span> -->
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick = "closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick = "openmenu()"></i>
-                
-            </nav>
-            <div class="header-text">
-                <h1>Hi, I'm <span>Nikhil Yakkala</span> </h1>
-                <p> Master's in  CS @ DePaul </p>
-            </div>
+        <nav>
+            <div class="logo-circle">Nr</div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text fade-in">
+            <h1>Hi, I'm <span>Nikhil Yakkala</span></h1>
+            <p>Master’s in CS @ DePaul</p>
+        </div>
         </div>
     </div>
-
-<!-- ---------------------ABOUT------------------->
-
-<div id="about">
-    <div class="container">
-        <div class="row">
+    <section class="fade-in" id="about">
+        <div class="container about-flex">
             <div class="about-col-1">
-                <img src="images/nikhil2.jpg" alt="Nikhil Yakkala">
+                <img alt="Nikhil Yakkala" src="images/nikhil2.jpg"/>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                    <p>Hi, I’m Nikhil, Experienced Software Engineer with 4+ years in scalable cloud-native development using Java, Python, AWS, and Kubernetes. Skilled in CI/CD, microservices, and React portals. AWS Certified; excels in Agile teams and delivering high-quality, reliable solutions.
-                <div class="tab-titles">
-                    <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills" >
-                    <ul>
-                        <li>
-                            <span>Programming Languages</span><br>
-                            Java (JDK, JVM), Python, C, C#, Rust<br>
-                        </li>
-                        <li>
-                            <span>Databases</span><br>
-                            PostgreSQL, Oracle, DB2, NoSQL, MySQL, MongoDB, Cassandra, SQL, RDBMS<br>
-                        </li>
-                        <li>
-                            <span>Web Technologies</span><br>
-                            HTML5, CSS, JavaScript, AJAX, JSON, Bootstrap, jQuery, XML, Angular (v2.0–v14), React.js (with Flux/Redux), Node.js, Express.js, Hapi.js<br>
-                        </li>
-                        <li>
-                            <span>Frameworks / Libraries</span><br>
-                            .NET, Spring Boot, Handlebars.js, Polymer.js, Backbone.js<br>
-                        </li>
-                        <li>
-                            <span>Web Services</span><br>
-                            RESTful APIs, SOAP, JAX-RS, JAX-WS, Apache CXF, Axis, Jersey<br>
-                        </li>
-                        <li>
-                            <span>Applications / Web Servers</span><br>
-                            Apache Tomcat, Oracle WebLogic, IBM WebSphere, JBoss<br>
-                        </li>
-                        <li>
-                            <span>Testing Tools</span><br>
-                            JUnit, TestNG, Mockito, Selenium, Protractor, Jasmine, Karma, Mocha, Chai, Spock<br>
-                        </li>
-                        <li>
-                            <span>DevOps & CI/CD</span><br>
-                            AWS, Azure, GCP, Docker, Kubernetes, Jenkins, Terraform, GitHub/GitLab<br>
-                        </li>
-                        <li>
-                            <span>Build Tools</span><br>
-                            Maven, Gradle, Ant, Webpack, Gulp, Grunt, NPM, Bower<br>
-                        </li>
-                        <li>
-                            <span>Operating Systems</span><br>
-                            Windows, Linux, Unix, macOS<br>
-                        </li>
-                        <li>
-                            <span>Project Management</span><br>
-                            Jira, Rally, Microsoft Project<br>
-                        </li>
-                        <li>
-                            <span>AI/ML & GenAI</span><br>
-                            GenAI, Large Language Models, Scikit-learn, TensorFlow, PyTorch, Hugging Face
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="certifications">
-                    <ul>
-                        <li>Computer Vision - Object Detection with OpenCV and Python by Coursera</li>
-                        <li>Python Data Structures by Coursera</li>
-                        <li>Angular & Node Js - The MEAN Stack Guide by Udemy</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li>
-                            <span>Masters in Computer Science - 3.7/4</span><br>
-                            University: DePaul University<br>
-                            Graduation: June 2024<br>
-                        </li>
-                        <li>
-                            <span>Bachelors in Computer Science - 3.6/4</span><br>
-                            Univeristy: Geethanjali College of Engineering and Technology<br>
-                            Graduation: June 2021<br>
-                        </li>
-                    </ul>
-                </div>
+            <div class="about-info glass-card">
+                <h2>About Me</h2>
+                <p>Experienced Software Engineer with 4+ years in scalable cloud-native development using Java, Python, AWS, Kubernetes. Skilled in CI/CD, microservices, and React portals. AWS Certified; excels in Agile teams and delivering high-quality, reliable solutions.</p>
             </div>
         </div>
-    </div>
-</div>
-
-<!-- ------------------Work Experience------------- -->
-
-<div id="experience">
-    <div class="container">
-        <h1 class="sub-title">Work Experience</h1>
-        <div class="exp-work-list">
-            <div class="exp-work">
-                <div>
-                    <h3><span>Computer Engineer | Kofax Inc.</span><span>July 2024 - Current</span></h3>
-                    <ul>
-                        <li>Led development of a cloud-native SaaS platform handling 10,000+ daily transactions with &lt;500ms latency and 99.9% uptime.</li>
-                        <li>Architected 4 core microservices (Spring Boot) on AWS EKS, integrating third-party APIs and automating workflows from ingestion to compliance-ready response generation.</li>
-                        <li>Designed containerized, event-driven architecture using Kubernetes, Docker, and AWS serverless services, improving scalability by 35% and enabling dynamic resource allocation for high-traffic workloads.</li>
-                        <li>Developed React-based user portal with JWT authentication (AWS Cognito) and embedded real-time analytics dashboards (Grafana), empowering stakeholders to monitor system health, SLAs, and transaction metrics.</li>
-                        <li>Secured infrastructure using IAM policies, KMS encryption, and VPC isolation, ensuring compliance with data protection regulations (e.g., HIPAA) across 50+ microservices and 15+ AWS environments.</li>
-                        <li>Built observability framework by aggregating metrics from Prometheus, AWS CloudWatch, and X-Ray into Grafana, reducing incident resolution time by 30% via automated alerts for performance bottlenecks.</li>
-                        <li>Led 5-member Agile team, delivering 12+ milestones on schedule and reducing defects by 25% through peer reviews and TDD.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="exp-work">
-                <div>
-                    <h3><span>Computer Science Grader | DePaul University</span><span>September 2023 - June 2024</span></h3>
-                    <ul>
-                        <li>Managed grading responsibilities for Data Analytics and Regression, Distributed Systems, and Big Data Mining concurrently, ensuring adherence to quality standards and meeting deadlines effectively.</li>
-                        <li>Evaluated and graded 50+ assignments per week, prioritizing fairness and accuracy to uphold academic integrity.</li>
-                        <li>Provided personalized guidance and support to over 100 students, aiding comprehension, addressing inquiries across the subjects.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="exp-work">
-                <div>
-                    <h3><span>Associate Professional Software Engineer | DXC Technology</span><span>August 2021 - June 2022</span></h3>
-                    <ul>
-                        <li>Collaborated with stakeholders and cross-functional teams to translate business requirements into technical specifications, successfully onboarding user assets using scalable Java-based solutions.</li>
-                        <li>Designed and deployed RESTful APIs using Java, Spring Boot, and MongoDB, streamlining microservices deployment with Azure DevOps pipelines and resource groups, resulting in improved agility and frequent application updates.</li>
-                        <li>Implemented role-based access control (RBAC) using Spring Security, HTTP Basic authentication, and JWT tokens to secure API sessions and ensure compliance with data protection standards.</li>
-                        <li>Developed CI/CD pipelines using Jenkins and Terraform; integrated Prometheus and Grafana for monitoring and automated rollbacks to ensure high availability.</li>
-                        <li>Conducted code reviews for Java applications, improving maintainability and reducing defects by promoting design pattern adherence.</li>
-                        <li>Diagnosed and resolved software issues, reducing system defects by 15% through root cause analysis and debugging.</li>
-                        <li>Fixed front-end bugs using Angular and Chrome DevTools, optimizing UI performance and enhancing user experience.</li>
-                        <li>Automated workflows with Python and machine learning models, boosting process efficiency and reducing manual effort.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="exp-work">
-                <div>
-                    <h3><span>Java Developer | OneCard</span><span>August 2019 - July 2021</span></h3>
-                    <ul>
-                        <li>Conducted testing and debugging of software applications, reducing defects by 20% and improving transaction system reliability.</li>
-                        <li>Designed and implemented Java applications using Spring Boot, MySQL, Kubernetes, Docker, and Gradle for scalable deployments.</li>
-                        <li>Resolved software bugs, improving system stability and reducing production downtime.</li>
-                        <li>Collaborated in Agile development environments, actively contributing to sprint planning, backlog grooming, and retrospective meetings to drive timely project delivery and continuous improvement.</li>
-                        <li>Engineered data pipelines for large datasets, achieving 30% faster processing</li>
-                        <li>Built and optimized data pipelines for financial systems using Java and big data technologies, improving accuracy and efficiency.</li>
-                    </ul>
-                </div>
-            </div>
+    </section>
+    <section class="exp-section container fade-in" id="experience">
+        <h2>Work Experience</h2>
+        <div class="exp-card">
+            <h3>Kofax Inc. | Computer Engineer (July 2024 - Current)</h3>
+            <ul>
+                <li>Led development of a cloud-native SaaS platform handling 10,000+ daily transactions with &lt;500ms latency and 99.9% uptime.</li>
+                <li>Architected 4 core microservices (Spring Boot) on AWS EKS, integrating third-party APIs and automating workflows from ingestion to compliance-ready response generation.</li>
+                <li>Designed containerized, event-driven architecture using Kubernetes, Docker, and AWS serverless services, improving scalability by 35% and enabling dynamic resource allocation for high-traffic workloads.</li>
+                <li>Developed React-based user portal with JWT authentication (AWS Cognito) and embedded real-time analytics dashboards (Grafana), empowering stakeholders to monitor system health, SLAs, and transaction metrics.</li>
+                <li>Secured infrastructure using IAM policies, KMS encryption, and VPC isolation, ensuring compliance with data protection regulations (e.g., HIPAA) across 50+ microservices and 15+ AWS environments.</li>
+                <li>Built observability framework by aggregating metrics from Prometheus, AWS CloudWatch, and X-Ray into Grafana, reducing incident resolution time by 30% via automated alerts for performance bottlenecks.</li>
+                <li>Led 5-member Agile team, delivering 12+ milestones on schedule and reducing defects by 25% through peer reviews and TDD.</li>    
+            </ul>
         </div>
-    </div>
-</div>
-
-<!-- -------------------Projects------------------- -->
-
-<div id="projects">
-    <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/project-bg.png">
-                <div class="pro-name">
-                    <p>Analyzing Gamer Behaviour and Mental Health Patterns using Machine Learning</p>
-                    <p class="skills">
-                        #Python Programming<br>
-                        #Machine Learning
-                    </p>
-                </div>
-                <div class="layer">
-                    <p>Processed a 13,464-entry dataset to reveal trends in gamer anxiety and satisfaction. Achieved 97% prediction accuracy with Logistic Regression, validated through 5-fold cross-validation.</p>
-                    <a href="https://github.com/NikhilKKYakkala/Analyzing_Gamer_Behaviour"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/project-bg.png">
-                <div class="pro-name">
-                    <p>Decentralized Blockchain Ledger System</p>
-                    <p class="skills">
-                        #Java Programming  <br>#Networking <br>#Blockchain
-                    </p>
-                </div>
-                <div class="layer">
-                    <p>Implemented socket programming to replicate a blockchain, ensuring secure data transmission across 10 synchronized nodes.</p>
-                    <a href="https://github.com/NikhilKKYakkala/Decentralized-Blockchain-Ledger-System"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/project-bg.png">
-                <div class="pro-name">
-                    <p>Survey on Cyber Bullying</p>
-                    <p class="skills">
-                        #Python Programming  <br>
-                        #Machine Learning<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <p>Analyzed models and datasets to determine which models are best suited to what kind of datasets.</p>
-                    <a href=""><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/project-bg.png">
-                <div class="pro-name">
-                    <p>TutorHub Connect</p>
-                    <p class="skills">
-                        #MEAN Stack<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <p>Created a web platform using MEAN Stack, streamlining the tuition search process for students, tutors, and tutoring center’s</p>
-                    <a href="https://github.com/NikhilKKYakkala/TutorHub-Connect"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/project-bg.png">
-                <div class="pro-name">
-                    <p>Stock Exchange System</p>
-                    <p class="skills">
-                        #Java Programming<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <p>Created a Stock Exchange System</p>
-                    <a href="https://github.com/NikhilKKYakkala/Stock-Exchange-System"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
+        <div class="exp-card">
+            <h3>DePaul University | CS Grader (Sep 2023 - Jun 2024)</h3>
+            <ul>
+                <li>Managed grading responsibilities for Data Analytics, Regression, Distributed Systems, and Big Data Mining, ensuring timely feedback and consistent quality across multiple courses.</li>
+                <li>Evaluated and graded 50+ assignments weekly with a focus on accuracy and adherence to academic standards.</li>
+                <li>Provided academic support to over 100 students, addressing technical queries and enhancing subject understanding.</li>
+            </ul>
         </div>
-    </div>
-</div>
-
-<!-- ----contact--- -->
-
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fas fa-envelope"></i>yakkalanikhil99@gmail.com</p>
-                <p><i class="fas fa-phone"></i>+1 (469) 573-1965</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/nikhil-komal-kumar/"><i class="fab fa-linkedin" ></i></a>
-                    <a href="https://github.com/NikhilKKYakkala"><i class="fab fa-github" ></i></a>
-                    <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
-                </div> 
-                <a href="docs/Nikhil_Resume.pdf" download class="btn btn2">Resume</a>
-            </div>
-            <!-- <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name = "Name" placeholder="Your name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div> -->
+        <div class="exp-card">
+            <h3>DXC Technology | Associate Professional Software Engineer (Aug 2021 - Jun 2022)</h3>
+            <ul>
+                <li>Collaborated with stakeholders and cross-functional teams to translate business requirements into technical specifications, successfully onboarding user assets using scalable Java-based solutions.</li>
+                <li>Designed and deployed RESTful APIs using Java, Spring Boot, and MongoDB, streamlining microservices deployment with Azure DevOps pipelines and resource groups, resulting in improved agility and frequent application updates.</li>
+                <li>Implemented role-based access control (RBAC) using Spring Security, HTTP Basic authentication, and JWT tokens to secure API sessions and ensure compliance with data protection standards.</li>
+                <li>Developed CI/CD pipelines using Jenkins and Terraform; integrated Prometheus and Grafana for monitoring and automated rollbacks to ensure high availability.</li>
+                <li>Conducted code reviews for Java applications, improving maintainability and reducing defects by promoting design pattern adherence.</li>
+                <li>Diagnosed and resolved software issues, reducing system defects by 15% through root cause analysis and debugging.</li>
+                <li>Fixed front-end bugs using Angular and Chrome DevTools, optimizing UI performance and enhancing user experience.</li>
+                <li>Automated workflows with Python and machine learning models, boosting process efficiency and reducing manual effort.</li>
+            </ul>
         </div>
-    </div>
-    <div class="copyright">
-        <p>&copy Nikhil Yakkala.</p>
-    </div>
-</div>
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link")
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-
-        var tabheading = document.getElementsByClassName("tab-heading");
-        var tabinfos = document.getElementsByClassName("tab-infos");
-
-        function openprojs(tabproj){
-            for(projectwindow of tabheading){
-                projectwindow.classList.remove("active-heading")
-            }
-            for(tabinfo of tabinfos){
-                tabinfo.classList.remove("active-info")
-            }
-            event.currentTarget.classList.add("active-heading");
-            document.getElementById(tabproj).classList.add("active-info");
-        }
-    </script>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-
-<!-- <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzYt7DoBiMhcavwERpQbG2OILA7tgorx03W2F9kD43l3DV19-uO5FbYtFfrgbWVr1NO/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="Your details have been submitted successfully!"
-            setTimeout(function(){
-                msg.innerHTML = "";
-                
-            }, 3000)
-            form.reset();
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script> -->
+        <div class="exp-card">
+            <h3>OneCard | Java Developer (Aug 2019 - Jul 2021)</h3>
+            <ul>
+                <li>Conducted testing and debugging of software applications, reducing defects by 20% and improving transaction system reliability.</li>
+                <li>Designed and implemented Java applications using Spring Boot, MySQL, Kubernetes, Docker, and Gradle for scalable deployments.</li>
+                <li>Resolved software bugs, improving system stability and reducing production downtime.</li>
+                <li>Collaborated in Agile development environments, actively contributing to sprint planning, backlog grooming, and retrospective meetings to drive timely project delivery and continuous improvement.</li>
+                <li>Engineered data pipelines for large datasets, achieving 30% faster processing</li>
+                <li>Built and optimized data pipelines for financial systems using Java and big data technologies, improving accuracy and efficiency.</li>
+            </ul>
+        </div>
+    </section>
+    <section class="projects-section container fade-in" id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Analyzing Gamer Behavior</h3>
+            <p>Used ML to predict anxiety/satisfaction with 97% accuracy. Logistic Regression + Cross Validation.</p>
+        </div>
+        <div class="project-card">
+            <h3>Decentralized Blockchain Ledger</h3>
+            <p>Simulated secure transactions with 10-node socket-based network in Java.</p>
+        </div>
+    </section>
+    <section class="contact-section container fade-in" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-box">
+            <div class="contact-details">
+                <p><i class="fas fa-envelope"></i> yakkalanikhil99@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +1 (469) 573-1965</p>
+                <p><i class="fab fa-linkedin"></i> linkedin.com/in/nikhil-komal-kumar</p>
+                <p><i class="fab fa-github"></i> github.com/NikhilKKYakkala</p>
+            </div>
+            <form class="contact-form">
+                <input placeholder="Your Name" required="" type="text"/>
+                <input placeholder="Your Email" required="" type="email"/>
+                <textarea placeholder="Your Message" required="" rows="5"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
