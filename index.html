@@ -32,64 +32,102 @@
             </div>
         </div>
     </div>
-<!-- ---------------------ABOUT----------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/nikhil2.jpg" >
+
+<!-- ---------------------ABOUT------------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/nikhil2.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Nikhil, Experienced Software Engineer with 4+ years in scalable cloud-native development using Java, Python, AWS, and Kubernetes. Skilled in CI/CD, microservices, and React portals. AWS Certified; excels in Agile teams and delivering high-quality, reliable solutions.
+                <div class="tab-titles">
+                    <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <!-- <p>Hi there! I'm Nikhil Yakkala, a tech enthusiast who's all about pushing boundaries and making a difference. I dive into coding and machine learning to tackle real-life challenges. When I'm not buried in code, I'm out capturing the beauty of wildlife through my lens or cooking up a storm in the kitchen. And whenever I can, I love hitting the trails for some epic trekking adventures. Join me on my journey through tech and the great outdoors!</p> -->
-                     <p>Hi, I’m Nikhil, a software engineer with a deep passion for developing innovative and scalable solutions. I have a strong foundation in web development and backend technologies, working with frameworks like React.js, Node.js, and TypeScript, along with extensive experience in Python, SQL, and cloud platforms like Azure and AWS.<br> My academic journey includes a Master’s degree in Computer Science from DePaul University and a Bachelor’s degree from Geethanjali College of Engineering and Technology, where I honed my skills in designing and building software systems that solve real-world problems.
-                        <br>I thrive on tackling complex challenges, whether it's optimizing system performance or designing robust architectures. Beyond coding, I enjoy trekking, traveling to new places, and exploring the latest trends in AI and big data. I’m always looking for new experiences, whether that’s in my professional career or personal life.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
-                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills" >
-                        <ul>
-                            <li>
-                                <span>Programming Languages</span><br>
-                                Python, R, C, Java, SQL<br>
-                            </li>
-                            <li>
-                                <span>Web Development</span><br>
-                                MEAN Stack, React.js, HTML, JSS<br>
-                            </li>
-                            <li>
-                                <span>Frameworks / Tools</span><br>
-                                AWS, Azure, Snowflake, DBT, Control-M, Hadoop, JIRA, Confluence<br>
-                            </li>
-                            <li>
-                                <span>Certifications</span><br>
-                                Azure Data Engineer Certified
-                            </li>
-                        </ul>
-                    </div>
+                <div class="tab-contents active-tab" id="skills" >
+                    <ul>
+                        <li>
+                            <span>Programming Languages</span><br>
+                            Java (JDK, JVM), Python, C, C#, Rust<br>
+                        </li>
+                        <li>
+                            <span>Databases</span><br>
+                            PostgreSQL, Oracle, DB2, NoSQL, MySQL, MongoDB, Cassandra, SQL, RDBMS<br>
+                        </li>
+                        <li>
+                            <span>Web Technologies</span><br>
+                            HTML5, CSS, JavaScript, AJAX, JSON, Bootstrap, jQuery, XML, Angular (v2.0–v14), React.js (with Flux/Redux), Node.js, Express.js, Hapi.js<br>
+                        </li>
+                        <li>
+                            <span>Frameworks / Libraries</span><br>
+                            .NET, Spring Boot, Handlebars.js, Polymer.js, Backbone.js<br>
+                        </li>
+                        <li>
+                            <span>Web Services</span><br>
+                            RESTful APIs, SOAP, JAX-RS, JAX-WS, Apache CXF, Axis, Jersey<br>
+                        </li>
+                        <li>
+                            <span>Applications / Web Servers</span><br>
+                            Apache Tomcat, Oracle WebLogic, IBM WebSphere, JBoss<br>
+                        </li>
+                        <li>
+                            <span>Testing Tools</span><br>
+                            JUnit, TestNG, Mockito, Selenium, Protractor, Jasmine, Karma, Mocha, Chai, Spock<br>
+                        </li>
+                        <li>
+                            <span>DevOps & CI/CD</span><br>
+                            AWS, Azure, GCP, Docker, Kubernetes, Jenkins, Terraform, GitHub/GitLab<br>
+                        </li>
+                        <li>
+                            <span>Build Tools</span><br>
+                            Maven, Gradle, Ant, Webpack, Gulp, Grunt, NPM, Bower<br>
+                        </li>
+                        <li>
+                            <span>Operating Systems</span><br>
+                            Windows, Linux, Unix, macOS<br>
+                        </li>
+                        <li>
+                            <span>Project Management</span><br>
+                            Jira, Rally, Microsoft Project<br>
+                        </li>
+                        <li>
+                            <span>AI/ML & GenAI</span><br>
+                            GenAI, Large Language Models, Scikit-learn, TensorFlow, PyTorch, Hugging Face
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li>Computer Vision - Object Detection with OpenCV and Python by Coursera</li>
+                        <li>Python Data Structures by Coursera</li>
+                        <li>Angular & Node Js - The MEAN Stack Guide by Udemy</li>
+                    </ul>
+                </div>
 
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>
-                                <span>Masters in Computer Science - 3.7/4</span><br>
-                                University: DePaul University<br>
-                                Graduation: June 2024<br>
-                            </li>
-                            <li>
-                                <span>Bachelors in Computer Science - 3.6/4</span><br>
-                                Univeristy: Geethanjali College of Engineering and Technology<br>
-                                Graduation: June 2021<br>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>Masters in Computer Science - 3.7/4</span><br>
+                            University: DePaul University<br>
+                            Graduation: June 2024<br>
+                        </li>
+                        <li>
+                            <span>Bachelors in Computer Science - 3.6/4</span><br>
+                            Univeristy: Geethanjali College of Engineering and Technology<br>
+                            Graduation: June 2021<br>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
 
 <!-- ------------------Work Experience------------- -->
 
@@ -98,33 +136,61 @@
         <h1 class="sub-title">Work Experience</h1>
         <div class="exp-work-list">
             <div class="exp-work">
-                <div >
+                <div>
+                    <h3><span>Computer Engineer | Kofax Inc.</span><span>July 2024 - Current</span></h3>
+                    <ul>
+                        <li>Led development of a cloud-native SaaS platform handling 10,000+ daily transactions with "<"500ms latency and 99.9% uptime.</li>
+                        <li>Architected 4 core microservices (Spring Boot) on AWS EKS, integrating third-party APIs and automating workflows from ingestion to compliance-ready response generation.</li>
+                        <li>Designed containerized, event-driven architecture using Kubernetes, Docker, and AWS serverless services, improving scalability by 35% and enabling dynamic resource allocation for high-traffic workloads.</li>
+                        <li>Developed React-based user portal with JWT authentication (AWS Cognito) and embedded real-time analytics dashboards (Grafana), empowering stakeholders to monitor system health, SLAs, and transaction metrics.</li>
+                        <li>Secured infrastructure using IAM policies, KMS encryption, and VPC isolation, ensuring compliance with data protection regulations (e.g., HIPAA) across 50+ microservices and 15+ AWS environments.</li>
+                        <li>Built observability framework by aggregating metrics from Prometheus, AWS CloudWatch, and X-Ray into Grafana, reducing incident resolution time by 30% via automated alerts for performance bottlenecks.</li>
+                        <li>Led 5-member Agile team, delivering 12+ milestones on schedule and reducing defects by 25% through peer reviews and TDD.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exp-work">
+                <div>
                     <h3><span>Computer Science Grader | DePaul University</span><span>September 2023 - June 2024</span></h3>
-                    <!-- <h4>Computer Science Grader</h4> -->
                     <ul>
                         <li>Managed grading responsibilities for Data Analytics and Regression, Distributed Systems, and Big Data Mining concurrently, ensuring adherence to quality standards and meeting deadlines effectively.</li>
                         <li>Evaluated and graded 50+ assignments per week, prioritizing fairness and accuracy to uphold academic integrity.</li>
                         <li>Provided personalized guidance and support to over 100 students, aiding comprehension, addressing inquiries across the subjects.</li>
                     </ul>
-                   
                 </div>
             </div>
             <div class="exp-work">
-                <div >
+                <div>
                     <h3><span>Associate Professional Software Engineer, Data | DXC Technology</span><span>August 2021 - June 2022</span></h3>
-                    <!-- <h4>Associate Professional Software Engineer, Data</h4> -->
                     <ul>
-                        <li>Developed data ingestion pipelines from three diverse sources to the cloud, ensuring seamless data extraction and analysis.</li>
-                        <li>Crafted Python programs to streamline data extraction and automate query design and execution, saving two hours of unit testing.</li>
-                        <li>Collaborated with 2 cross-functional teams to enhance user experience, leading to a notable 15% increase in user satisfaction.</li>
-                        <li>Implemented Datastage jobs for file generation, increasing data processing speed by 40%; integrated managed foundation pipeline (MFP) into the staging layer (DL2), enhancing data flow efficiency significantly.</li>
-                        <li>Engineered Control-M jobs, orchestrating schedules for Datastage and DBT jobs, resulting a boost in overall workflow efficiency.</li>
+                        <li>Collaborated with stakeholders and cross-functional teams to translate business requirements into technical specifications, successfully onboarding user assets using scalable Java-based solutions.</li>
+                        <li>Designed and deployed RESTful APIs using Java, Spring Boot, and MongoDB, streamlining microservices deployment with Azure DevOps pipelines and resource groups, resulting in improved agility and frequent application updates.</li>
+                        <li>Implemented role-based access control (RBAC) using Spring Security, HTTP Basic authentication, and JWT tokens to secure API sessions and ensure compliance with data protection standards.</li>
+                        <li>Developed CI/CD pipelines using Jenkins and Terraform; integrated Prometheus and Grafana for monitoring and automated rollbacks to ensure high availability.</li>
+                        <li>Conducted code reviews for Java applications, improving maintainability and reducing defects by promoting design pattern adherence.</li>
+                        <li>Diagnosed and resolved software issues, reducing system defects by 15% through root cause analysis and debugging.</li>
+                        <li>Fixed front-end bugs using Angular and Chrome DevTools, optimizing UI performance and enhancing user experience.</li>
+                        <li>Automated workflows with Python and machine learning models, boosting process efficiency and reducing manual effort.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exp-work">
+                <div>
+                    <h3><span>Java Developer | OneCard</span><span>August 2019 - July 2021</span></h3>
+                    <ul>
+                        <li>Conducted testing and debugging of software applications, reducing defects by 20% and improving transaction system reliability.</li>
+                        <li>Designed and implemented Java applications using Spring Boot, MySQL, Kubernetes, Docker, and Gradle for scalable deployments.</li>
+                        <li>Resolved software bugs, improving system stability and reducing production downtime.</li>
+                        <li>Collaborated in Agile development environments, actively contributing to sprint planning, backlog grooming, and retrospective meetings to drive timely project delivery and continuous improvement.</li>
+                        <li>Engineered data pipelines for large datasets, achieving 30% faster processing</li>
+                        <li>Built and optimized data pipelines for financial systems using Java and big data technologies, improving accuracy and efficiency.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <!-- -------------------Projects------------------- -->
 
 <div id="projects">
@@ -198,299 +264,8 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="tab-headings">
-            <p class="tab-heading active-heading"  onclick="openprojs('wd')">Web Development</p>
-            <p class="tab-heading "  onclick="openprojs('ml')">Machine Learning</p>
-            <p class="tab-heading "  onclick="openprojs('bd')">Big Data</p>
-            <p class="tab-heading "  onclick="openprojs('os')">Operating System</p>
-    
-        </div>
-        <div class="tab-infos" id="os">
-    
-        <div class="work-list">
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Unix Shell</p>
-                    <p class="skills">
-                        #C Programming  <br>#Multi-process concept
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Baby Unix shell</h3>
-                    <p>Developed a program to replicate basic functionalities of a Unix shell.</p>
-    
-                    <a href="https://github.com/poojaminna/baby-unix-shell.git"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Sleeper Barber Variant</p>
-                    <p class="skills">
-                        #C Programming  <br>
-                        #Semaphore<br>
-                        #mutex <br>
-                        #Multi-process concept<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Seeking Tutor Problem</h3>
-                    <p>Created a program to exhibit concurrent thread programming. Implemented a variant
-                        of sleeper barber problem.</p>
-                    <a href="https://github.com/poojaminna/sleeper-barber-variant.git"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-        </div>
-        </div>
-
-        <div class="tab-infos active-info" id="wd">
-        <div class="work-list"> 
-
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>E-commerce WebApp</p>
-                    <p class="skills">
-                        #React.js  <br>
-                        #JavaScript<br>
-                        #MongoDB<br>
-                        #Node.js 
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>E Commerce Web Application</h3>
-                    <p>Built a full fledged web application. Implemented user and admin functionalities,
-                        designed database schema to store inventory and integrated payment gateway</p>
-                    <a href="https://github.com/poojaminna/e-commerce-web-application"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Travel Website</p>
-                    <p class="skills">
-                        #HTML, CSS  <br>
-                        #JavaScript<br>
-                        #MySQL<br>
-                        #PHP
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Booking Website </h3>
-                    <p>Built a website where users can book flights, hotels, rental cars. Focussed on backend.</p>
-                    <a href="https://github.com/poojaminna/booking-website"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-
-
-
-
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Beginner project-1</p>
-                    <p class="skills">
-                        #HTML, CSS <br>
-                        #JavaScript<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Early stage small project - 1</h3>
-                    <p>Timer , Clock, and Stop watch</p>
-                    <a href="https://github.com/poojaminna/poojaminna.github.io/tree/main/timer"><i class="fab fa-github" ></i>  </a>
-                    <a href="https://poojaminna.github.io/timer/"><i class="fas fa-play"></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Beginner project-2</p>
-                    <p class="skills">
-                        #HTML, CSS <br>
-                        #JavaScript<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Early stage small project - 2</h3>
-                    <p>Virtual Keyboard</p>
-                    <a href="https://github.com/poojaminna/poojaminna.github.io/tree/main/keyboard"><i class="fab fa-github" ></i>  </a>
-                    <a href="https://poojaminna.github.io/keyboard/"><i class="fas fa-play"></i>  </a>
-                </div>
-            </div>
-
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Beginner project-3</p>
-                    <p class="skills">
-                        #HTML, CSS <br>
-                        #JavaScript<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Early stage small project - 3</h3>
-                    <p>Shopping cart basic functionalities</p>
-                    <a href="https://github.com/poojaminna/poojaminna.github.io/tree/main/fshoppingCart"><i class="fab fa-github" ></i>  </a>
-                    <a href="https://poojaminna.github.io/fshoppingCart/"><i class="fas fa-play"></i> </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Beginner project -4</p>
-                    <p class="skills">
-                        #HTML, CSS <br>
-                        #JavaScript<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Early stage small project - 4</h3>
-                    <p>Binary to Decimal Converter</p>
-                    <a href="https://github.com/poojaminna/poojaminna.github.io/tree/main/BtoDconverter"><i class="fab fa-github" ></i>  </a>
-                    <a href="https://poojaminna.github.io/BtoDconverter/"><i class="fas fa-play"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Beginner project-5</p>
-                    <p class="skills">
-                        #HTML, CSS <br>
-                        #JavaScript<br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Early stage small project - 5</h3>
-                    <p>Golden ratio demonstration</p>
-                    <a href="https://github.com/poojaminna/poojaminna.github.io/tree/main/golden-ratio"><i class="fab fa-github" ></i>  </a>
-                    <a href="https://poojaminna.github.io/golden-ratio/"><i class="fas fa-play"></i>  </a>
-                </div>
-            </div>
-            
-            
-        </div>    
-        </div>
-        <div class="tab-infos" id="bd">
-        <div class="work-list">
-
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Classification problem</p>
-                    <p class="skills">
-                        #Naive Bayes <br>
-                        #PySpark<br>
-                        #Hadoop 
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Naive Bayes for Big Data</h3>
-                    <p>Implemented Naive Bayes from scratch for Big Data</p>
-                    <a href="https://github.com/poojaminna/naive-bayes-for-big-data"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Stock Market Prediction</p>
-                    <p class="skills">
-                        #Recurrent Neural N/w <br>
-                        #PySpark<br>
-                        #Hadoop 
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>RNN for Stock Market Prediction</h3>
-                    <p>Predicted Stock Market value for a company using RNN.</p>
-                    <a href="https://github.com/poojaminna/stock-market-prediction-with-rnn"><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Document Search</p>
-                    <p class="skills">
-                        #Tf - idf <br>
-                        #PySpark<br>
-                        #Hadoop 
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Search Engine for Movie Plot summaries</h3>
-                    <p>Suggesting movie names by searching for search words in abundant movie summaries</p>
-                    <a href="https://github.com/poojaminna/movie-plot-idf."><i class="fab fa-github" ></i>  </a>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="tab-infos" id="ml">
-        <div class="work-list">    
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Logistic regression</p>
-                    <p class="skills">
-                        #Python <br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Logistic regression.</h3>
-                    <p>Implemented logitisc regression from scratch.</p>
-                    <a href="https://colab.research.google.com/drive/1e8NdNYWuatxm0QZzPGILjc38FXj1qT9_"><i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Decision Tree</p>
-                    <p class="skills">
-                        #Python <br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Decision Tree</h3>
-                    <p>Implemented id3 Decision Tree from scratch.</p>
-                    <a href="https://colab.research.google.com/drive/18SLo2Vs9H3EAh5juKD54FWNCU5ziaPQq#scrollTo=3IZfYOX_9Wtt"><i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Naive Bayes</p>
-                    <p class="skills">
-                        #Python <br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Naive Bayes</h3>
-                    <p>Implemented Multinomial Naive Bayes from scratch.</p>
-                    <a href="https://colab.research.google.com/drive/1AZjX_ZluPrbrTfsUJczUHZ8mOUyTqdCf"><i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/forport-2.png" >
-                <div class="pro-name">
-                    <p>Ensemble methods</p>
-                    <p class="skills">
-                        #Python <br>
-                    </p>
-                </div>
-                <div class="layer">
-                    <h3>Ensemble methods</h3>
-                    <p>Implemented bagging and boosting with decision tree from scratch. </p>
-                    <a href="https://colab.research.google.com/drive/10UuhvIfY6oJD90i_B9mUgvsmb-_b7fNZ"><i class="fas fa-external-link-alt"></i>
-                    </a>
-                </div>
-            </div>
-            </div>
-        </div> -->
     </div>
 </div>
-
 
 <!-- ----contact--- -->
 
