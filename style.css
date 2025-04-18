@@ -105,7 +105,7 @@ nav ul li a:hover::after{
 
 .about-col-1{
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px #2F84D4;
@@ -544,7 +544,12 @@ nav .fas{
         flex-basis: 100%;
     }
     .about-col-1{
-        margin-bottom: 30px;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px #2F84D4;
+        margin: auto;
     }
     .about-col-2{
         font-size: 14px;
