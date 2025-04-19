@@ -54,7 +54,37 @@ body {
 
   nav ul li a:hover {
     color: #2F84D4;
-  }  
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 26px;
+    color: #2F84D4;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    #sidemenu {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      position: absolute;
+      right: 20px;
+      top: 70px;
+      border-radius: 8px;
+      z-index: 100;
+    }
+  
+    #sidemenu.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
 
   .resume-nav-btn {
     padding: 8px 18px;
@@ -456,8 +486,8 @@ body {
     }
   
     .logo {
-      width: 70%;
-      max-width: 150px;
+      width: 80px;
+      /* max-width: 150px; */
     }
   
     .about-flex {
@@ -466,19 +496,21 @@ body {
     }
   
     .contact-box {
-      flex-direction: column;
+      /* flex-direction: column; */
       padding: 20px;
+      width: 100%;
     }
   
     .contact-form input,
     .contact-form textarea {
       font-size: 1rem;
-      padding: 14px;
+      padding: 12px;
+      box-sizing: border-box;
     }
   
     .resume-nav-btn {
       padding: 6px 14px;
       font-size: 14px;
     }
-  }
+  }  
   

@@ -30,6 +30,7 @@
     <div class="gradient-bg" id="header">
         <div class="container">
         <nav>
+            <div class="hamburger" id="hamburger">&#9776;</div>
             <img src="images/logo_darkmode.png" class="logo" id="site-logo" alt="Logo" />
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
@@ -222,6 +223,14 @@
     </footer>
 
     <script>
+
+        // Nav Menu on Mobile
+        const menu = document.getElementById("sidemenu");
+        const burger = document.getElementById("hamburger");
+
+        burger.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
 
         // Logo Toggle
         const logo = document.getElementById("site-logo");
