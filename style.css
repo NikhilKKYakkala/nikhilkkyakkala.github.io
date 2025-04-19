@@ -449,7 +449,54 @@ body {
     font-size: 14px;
     color: #a4a4a4;
   }
+
+  @media (max-width: 768px) {
+    nav {
+        padding: 0 10px;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
   
+    .logo {
+      width: 80px;
+      height: auto;
+    }
+  
+    .about-flex {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .resume-nav-btn {
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+
+    .contact-section .container {
+        padding: 0 20px;
+    }
+    
+    .contact-box {
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #scrollBtn {
+        bottom: 20px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+  }
+
   /* Light Mode */
   body.light-mode {
     background: linear-gradient(to bottom, #f0f4f8, #dbe5ec);
@@ -460,6 +507,18 @@ body {
   body.light-mode .resume-nav-btn,
   body.light-mode .project-list i,
   body.light-mode .large-icon {
+    color: #111;
+  }
+
+  body.light-mode nav ul li a {
+    color: #111;
+  }
+  
+  body.light-mode nav ul li a:hover {
+    color: #2F84D4;
+  }
+  
+  body.light-mode .hamburger {
     color: #111;
   }
   
@@ -495,58 +554,3 @@ body {
   body.light-mode .contact-form textarea::placeholder {
     color: #555;
   }
-
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-      align-items: flex-start;
-    }
-  
-    .logo {
-      width: 80px;
-      height: auto;
-    }
-  
-    .about-flex {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-    .resume-nav-btn {
-      padding: 6px 14px;
-      font-size: 14px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .contact-box {
-      flex-direction: column;
-      padding: 20px;
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .contact-left,
-    .contact-right {
-      width: 100%;
-    }
-  
-    .contact-form input,
-    .contact-form textarea {
-      font-size: 1rem;
-      padding: 12px;
-      box-sizing: border-box;
-    }
-  }
-
-  @media (max-width: 768px) {
-    #scrollBtn {
-      bottom: 20px;
-      right: 20px;
-      width: 36px;
-      height: 36px;
-      font-size: 18px;
-    }
-  }
-  
