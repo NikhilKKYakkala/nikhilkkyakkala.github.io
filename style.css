@@ -97,6 +97,19 @@ body {
     text-decoration: none;
   }
 
+  .close-nav {
+    font-size: 28px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  body.light-mode .close-nav {
+    color: #111;
+  }
+
   .resume-nav-btn {
     padding: 8px 18px;
     background-color: transparent;

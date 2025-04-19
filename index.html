@@ -28,6 +28,7 @@
 </head>
 <body>
     <div id="mobile-nav" class="mobile-nav">
+        <div class="close-nav" id="close-nav">&times;</div>
         <ul>
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -243,6 +244,12 @@
             menu.classList.toggle("show");
         });
 
+        // Close Button
+        const closeNav = document.getElementById("close-nav");
+        closeNav.addEventListener("click", () => {
+            mobileNav.classList.remove("show");
+        });
+
         // Logo Toggle
         const logo = document.getElementById("site-logo");
 
@@ -254,8 +261,6 @@
         document.getElementById("theme-toggle").addEventListener("click", () => {
             updateLogo();
         });
-
-        window.onload = updateLogo;
 
         const mobileNav = document.getElementById("mobile-nav");
 
@@ -290,6 +295,7 @@
                 document.body.classList.add('light-mode');
             }
             updateIcon();
+            updateLogo();
         };
 
         // Contact From
