@@ -63,47 +63,6 @@ body {
     cursor: pointer;
   }
 
-  @media (max-width: 768px) {
-    nav {
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    .hamburger {
-      display: block;
-      font-size: 28px;
-      color: #2F84D4;
-      background: none;
-      border: none;
-      cursor: pointer;
-      margin-left: auto;
-    }
-  
-    #sidemenu {
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      background: rgba(10, 15, 36, 0.95);
-      padding: 15px 20px;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-  
-    #sidemenu.show {
-      display: flex;
-    }
-  
-    #sidemenu li {
-      width: 100%;
-    }
-  
-    #sidemenu li a {
-      width: 100%;
-      padding: 10px 0;
-    }
-  }
-
   .resume-nav-btn {
     padding: 8px 18px;
     background-color: transparent;
