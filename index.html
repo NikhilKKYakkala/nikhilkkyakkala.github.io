@@ -30,7 +30,7 @@
     <div class="gradient-bg" id="header">
         <div class="container">
         <nav>
-            <img src="images/logo_dark_mode.png" class="logo fade-logo" id="site-logo" alt="Logo" />
+            <img src="images/logo_darkmode.png" class="logo" id="site-logo" alt="Logo" />
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -227,26 +227,16 @@
         const logo = document.getElementById("site-logo");
 
         function updateLogo() {
-            logo.style.opacity = 0;
-
-            setTimeout(() => {
-                const isLight = document.body.classList.contains("light-mode");
-                logo.src = isLight ? "images/logo_light_mode.png" : "images/logo_dark_mode.png";
-
-                logo.onload = () => {
-                    logo.style.opacity = 1;
-                };
-            }, 100); // wait for fade out before swapping src
+            const isLight = document.body.classList.contains("light-mode");
+            logo.src = isLight ? "images/logo_lightmode.png" : "images/logo_darkmode.png";
         }
 
-        const themeToggle = document.getElementById("theme-toggle");
-            themeToggle.addEventListener("click", () => {
-                updateLogo();
+        document.getElementById("theme-toggle").addEventListener("click", () => {
+            updateLogo();
         });
 
-        window.onload = () => {
-            updateLogo();
-        };
+        window.onload = updateLogo;
+
 
         // Light/Dark Toggle Button
         const toggle = document.getElementById('theme-toggle');

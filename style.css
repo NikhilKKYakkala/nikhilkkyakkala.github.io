@@ -14,10 +14,6 @@ body {
     width: 100px;
     height: auto;
   }
-
-  .fade-logo {
-    transition: opacity 0.3s ease-in-out;
-  }
   
   .gradient-bg::before {
     content: "";
@@ -451,3 +447,38 @@ body {
   body.light-mode .contact-form textarea::placeholder {
     color: #555;
   }
+
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+  
+    .logo {
+      width: 70%;
+      max-width: 150px;
+    }
+  
+    .about-flex {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .contact-box {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 1rem;
+      padding: 14px;
+    }
+  
+    .resume-nav-btn {
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+  }
+  
