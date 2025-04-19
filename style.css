@@ -62,27 +62,45 @@ body {
     color: #2F84D4;
     cursor: pointer;
   }
-  
+
   @media (max-width: 768px) {
+    nav {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 28px;
+      color: #2F84D4;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: auto;
+    }
+  
     #sidemenu {
       display: none;
       flex-direction: column;
-      gap: 15px;
-      background: rgba(0, 0, 0, 0.9);
-      padding: 15px;
-      position: absolute;
-      right: 20px;
-      top: 70px;
+      align-items: flex-start;
+      width: 100%;
+      background: rgba(10, 15, 36, 0.95);
+      padding: 15px 20px;
       border-radius: 8px;
-      z-index: 100;
+      margin-top: 10px;
     }
   
     #sidemenu.show {
       display: flex;
     }
   
-    .hamburger {
-      display: block;
+    #sidemenu li {
+      width: 100%;
+    }
+  
+    #sidemenu li a {
+      width: 100%;
+      padding: 10px 0;
     }
   }
 
@@ -487,7 +505,7 @@ body {
   
     .logo {
       width: 80px;
-      /* max-width: 150px; */
+      height: auto;
     }
   
     .about-flex {
@@ -495,9 +513,22 @@ body {
       gap: 20px;
     }
   
+    .resume-nav-btn {
+      padding: 6px 14px;
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
     .contact-box {
-      /* flex-direction: column; */
+      flex-direction: column;
       padding: 20px;
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .contact-left,
+    .contact-right {
       width: 100%;
     }
   
@@ -507,10 +538,15 @@ body {
       padding: 12px;
       box-sizing: border-box;
     }
-  
-    .resume-nav-btn {
-      padding: 6px 14px;
-      font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    #scrollBtn {
+      bottom: 20px;
+      right: 20px;
+      width: 36px;
+      height: 36px;
+      font-size: 18px;
     }
-  }  
+  }
   
