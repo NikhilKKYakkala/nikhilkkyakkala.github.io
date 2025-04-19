@@ -452,39 +452,69 @@ body {
 
   @media (max-width: 768px) {
     nav {
+        flex-wrap: wrap;
         padding: 0 10px;
     }
-    
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
-      align-items: flex-start;
+
+    .hamburger {
+        display: block;
     }
-  
+
+    #sidemenu {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 15px;
+        position: absolute;
+        right: 10px;
+        top: 70px;
+        border-radius: 8px;
+        z-index: 100;
+    }
+
+    #sidemenu.show {
+        display: flex;
+    }
+
     .logo {
-      width: 80px;
-      height: auto;
+        width: 80px;
+        height: auto;
     }
-  
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .about-flex {
-      flex-direction: column;
-      gap: 20px;
+        flex-direction: column;
+        gap: 20px;
     }
-  
+
     .resume-nav-btn {
-      padding: 6px 14px;
-      font-size: 14px;
+        padding: 6px 14px;
+        font-size: 14px;
     }
 
     .contact-section .container {
         padding: 0 20px;
     }
-    
+
     .contact-box {
         flex-direction: column;
         padding: 20px;
         margin: 0 auto;
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
         box-sizing: border-box;
     }
 
@@ -502,43 +532,39 @@ body {
     background: linear-gradient(to bottom, #f0f4f8, #dbe5ec);
     color: #111;
   }
-  
+
   body.light-mode nav ul li a,
   body.light-mode .resume-nav-btn,
   body.light-mode .project-list i,
   body.light-mode .large-icon {
-    color: #111;
-  }
+    color: #111 !important;
+ }
 
-  body.light-mode nav ul li a {
-    color: #111;
-  }
-  
   body.light-mode nav ul li a:hover {
     color: #2F84D4;
-  }
-  
+ }
+
   body.light-mode .hamburger {
-    color: #111;
+    color: #111 !important;
   }
-  
+
   body.light-mode .resume-nav-btn {
     border-color: #111;
   }
-  
+
   body.light-mode .resume-nav-btn:hover {
     background-color: #111;
     color: #fff;
   }
-  
+
   body.light-mode .about-info,
   body.light-mode .exp-card,
   body.light-mode .contact-box {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     color: #111;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   body.light-mode .contact-left i {
     color: #fff;
   }
