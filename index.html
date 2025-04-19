@@ -21,7 +21,7 @@
     <meta name="twitter:description" content="Software Developer | Cloud Architect | Wildlife Photographer" />
     <meta name="twitter:image" content="images/nikhil2.jpg" />
     
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico"/>
     <title>Nikhil Yakkala | Portfolio</title>
     <link href="style.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
@@ -30,7 +30,7 @@
     <div class="gradient-bg" id="header">
         <div class="container">
         <nav>
-            <img src="images/log1.png" class="logo">
+            <img src="images/logo_dark_mode.png" class="logo fade-logo" id="site-logo" alt="Logo" />
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -38,6 +38,33 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a class="resume-nav-btn" href="docs/Nikhil_Resume.pdf" download>📄 Resume</a></li>
+                <li>
+                    <button id="theme-toggle" title="Toggle Theme">
+                        <!-- Sun -->
+                        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <g>
+                              <!-- Glow -->
+                              <circle cx="12" cy="12" r="6" fill="#FFD700" />
+                              <!-- Rays -->
+                              <g stroke="#FFD700" stroke-width="2" stroke-linecap="round">
+                                <line x1="12" y1="1" x2="12" y2="4"/>
+                                <line x1="12" y1="20" x2="12" y2="23"/>
+                                <line x1="1" y1="12" x2="4" y2="12"/>
+                                <line x1="20" y1="12" x2="23" y2="12"/>
+                                <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+                                <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+                                <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+                                <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+                              </g>
+                            </g>
+                          </svg>
+                        <!-- Moon -->
+                        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 12.79A9 9 0 1111.21 3c.66 0 1.3.07 1.91.2a7 7 0 108.57 9.59 9.05 9.05 0 01-.69.01z"/>
+                        </svg>                      
+                    </button>
+                  </li>
+                  
             </ul>
         </nav>
         <div class="header-text fade-in">
@@ -49,7 +76,7 @@
     <section class="fade-in" id="about">
         <div class="container about-flex">
             <div class="about-col-1">
-                <img alt="Nikhil Yakkala" src="images/nikhil2.jpg"/>
+                <img alt="Nikhil Yakkala" src="images/nikhil.jpg"/>
             </div>
             <div class="about-info glass-card">
                 <h2>About Me</h2>
@@ -162,16 +189,12 @@
                 </div>
                 <div class="contact-line">
                     <i class="fas fa-phone"></i> (469) 573-1965
-                </div>
+                </div><br>
                 <div class="contact-line">
                     <a href="https://linkedin.com/in/nikhil-komal-kumar" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-                <div class="contact-line">
+                        <i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/NikhilKKYakkala" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
+                        <i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="contact-right">
@@ -189,6 +212,9 @@
             </div>
         </div>   
     </section>
+
+    <button id="scrollBtn" title="Back to top">⬆</button>
+
     <footer class="footer">
         <div class="container">
           <p>© 2024 Nikhil Yakkala. All rights reserved.</p>
@@ -196,29 +222,100 @@
     </footer>
 
     <script>
+
+        // Logo Toggle
+        const logo = document.getElementById("site-logo");
+
+        function updateLogo() {
+            logo.style.opacity = 0;
+
+            setTimeout(() => {
+                const isLight = document.body.classList.contains("light-mode");
+                logo.src = isLight ? "images/logo_light_mode.png" : "images/logo_dark_mode.png";
+
+                logo.onload = () => {
+                    logo.style.opacity = 1;
+                };
+            }, 100); // wait for fade out before swapping src
+        }
+
+        const themeToggle = document.getElementById("theme-toggle");
+            themeToggle.addEventListener("click", () => {
+                updateLogo();
+        });
+
+        window.onload = () => {
+            updateLogo();
+        };
+
+        // Light/Dark Toggle Button
+        const toggle = document.getElementById('theme-toggle');
+        const sun = document.getElementById('icon-sun');
+        const moon = document.getElementById('icon-moon');
+
+        function updateIcon() {
+            const isLight = document.body.classList.contains('light-mode');
+            sun.style.display = isLight ? 'none' : 'inline';
+            moon.style.display = isLight ? 'inline' : 'none';
+        }
+
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+            updateIcon();
+        });
+
+        window.onload = () => {
+            if (localStorage.getItem('theme') === 'light') {
+                document.body.classList.add('light-mode');
+            }
+            updateIcon();
+        };
+
+        // Contact From
         const form = document.querySelector('.contact-form');
         const success = document.querySelector('.form-success');
       
         form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          const data = new FormData(form);
-      
-          fetch(form.action, {
-            method: 'POST',
-            body: data,
-            headers: {
-              'Accept': 'application/json'
-            }
-          }).then(() => {
-            form.reset();
-            success.style.display = 'block';
-          }).catch(() => {
-            success.textContent = 'Oops! Something went wrong.';
-            success.style.color = 'tomato';
-            success.style.display = 'block';
-          });
+            e.preventDefault();
+            const data = new FormData(form);
+        
+            fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: {
+                'Accept': 'application/json'
+                }
+            }).then(() => {
+                form.reset();
+                success.style.display = 'block';
+            }).catch(() => {
+                success.textContent = 'Oops! Something went wrong.';
+                success.style.color = 'tomato';
+                success.style.display = 'block';
+            });
         });
+
+        // Scroll To Top Button
+        let lastScroll = 0;
+        const scrollBtn = document.getElementById("scrollBtn");
+
+        window.addEventListener("scroll", () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 300 && currentScroll > lastScroll) {
+                scrollBtn.classList.add("show");
+            } else {
+                scrollBtn.classList.remove("show");
+            }
+
+        lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+        });
+
+        scrollBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
       </script>
-      
 </body>
 </html>
