@@ -27,6 +27,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
+    <div id="mobile-nav" class="mobile-nav">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="resume-nav-btn" href="docs/Nikhil_Resume.pdf" download>📄 Resume</a></li>
+        </ul>
+      </div>
+      
     <div class="gradient-bg" id="header">
         <div class="container">
         <nav>
@@ -246,6 +257,16 @@
 
         window.onload = updateLogo;
 
+        const mobileNav = document.getElementById("mobile-nav");
+
+        burger.addEventListener("click", () => {
+            mobileNav.classList.toggle("show");
+        });
+
+        // Close nav on link click (optional)
+        mobileNav.querySelectorAll("a").forEach(link =>
+            link.addEventListener("click", () => mobileNav.classList.remove("show"))
+        );
 
         // Light/Dark Toggle Button
         const toggle = document.getElementById('theme-toggle');
